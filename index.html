@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="css/scrollToTop.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Denis Novik</title>
 </head>
-
 <body>
+<div class="page">
 	<header class="header">
 		<div class="container">
 			<div class="header__block-nav">
 				<nav class="menu">
 					<ul class="menu__list">
-						<li class="menu__list-item menu__list-item--active"><a href="#">Home</a></li>
-						<li class="menu__list-item"><a href="#">About me</a></li>
-						<li class="menu__list-item"><a href="#">Skills</a></li>
-						<li class="menu__list-item"><a href="#">Portfolio</a></li>
-						<li class="menu__list-item"><a href="#">Contacts</a></li>
+						<li class="menu__list-item menu__list-item--active"><a tabindex="1" href="#">Home</a></li>
+						<li class="menu__list-item"><a tabindex="2" href="#about">About me</a></li>
+						<li class="menu__list-item"><a tabindex="3" href="#skills">Skills</a></li>
+						<li class="menu__list-item"><a tabindex="4" href="#portfolio">Portfolio</a></li>
+						<li class="menu__list-item"><a tabindex="5" href="#contacts">Contacts</a></li>
 					</ul>
 				</nav>
 			</div>
-
-			<hr class="header__line">
-
-			<div class="header__block-himself">
-				<h1 class="header__title">Denis <br> Novik</h1>
-				<p class="header__proffesion">UX | UI designer <br> 24 years old, Minsk</p>
-				<div class="header__lng">
-					<span class="header__lng--ru">RU</span>
-					<span class="header__lng--eng header__lng--eng--active">ENG</span>
+	</header>
+	<section class="intro">
+		<div class="container">
+			<div class="intro__block">
+				<h1 class="intro__title">Denis <br> Novik</h1>
+				<p class="intro__proffesion">UX | UI designer <br> 24 years old, Minsk</p>
+				<div class="intro__lng">
+					<span class="intro__lng-ru"> <a tabindex="6" href="#">RU</a></span>
+					<span class="intro__lng-eng header__lng-eng--active"> <a tabindex="7" href="#">ENG</a></span>
 				</div>
 			</div>
-			<div class="header__picture">
-				<img class="header__picture-img" src="img/main__picture.jpg" alt="main__picture">
+			<div class="intro__picture">
+				<img class="intro__picture-main" src="img/Intro.jpg" alt="intro">
+				<img  class="intro__picture-mobile" src="img/Intro__Adaptive.jpg" alt="Intro">
 			</div>
 		</div>
-	</header>
-
-<section class="about-me">
+	</section>
+ <section class="about" id="about">
 		<div class="container">
-			<div class="about-me__inner">
+			<div class="about__inner">
 				<h2 class="about__title title">About me</h2>
-				<div class="about-me__text">
+				<div class="about__text">
 					<p>Hi, I'm Denis – UX/UI designer from Minsk. <br>
 						I'm interested in design and everything connected with it.</p>
 					<p>I'm studying at courses "Web and mobile design <br>
@@ -56,70 +59,105 @@
 			</div>
 		</div>
 	</section>
-
-	<section class="skills">
+	<section class="skills" id="skills">
 		<div class="container">
 			<div class="skills__inner">
 				<h2 class="skills__title">Skills</h2>
 				<p class="skills__subtitle">I work in such programs as</p>
 				<div class="skills__pictures-wrap">
-					<img class="picture__wrap-item" src="img/photoshop__img.jpg" alt="">
-					<img class="picture__wrap-item" src="img/adobe___ illistrator.jpg" alt="">
-					<img class="picture__wrap-item" src="img/adobe__aftera___affects.jpg" alt="">
-					<img class="picture__wrap-item" src="img/figma.jpg" alt="">
+					<div class="picture__wrap-item">
+						<img class="picture__wrap-icon" src="img/Adobe__Photoshop.jpg" alt="skills icon">
+						<div class="picture__wrap-text">Adobe<br>Photoshop</div>
+						<div class="picture__block-items">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+						</div>
+					</div>
+					<div class="picture__wrap-item">
+						<img class="picture__wrap-item" src="img/Adobe__Illustrator.jpg" alt="skills icon">
+						<div class="picture__wrap-text">Adobe<br>Illustrator</div>
+						<div class="picture__block-items">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+						</div>
+					</div>
+					<div class="picture__wrap-item">
+						<img class="picture__wrap-item" src="img/Adobe__After-Effects.jpg" alt="skills icon">
+						<div class="picture__wrap-text">Adobe<br>After Effects</div>
+						<div class="picture__block-items">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+						</div>
+					</div>
+					<div class="picture__wrap-item">
+						<img class="picture__wrap-item" src="img/Adobe__Premiere-Pro.jpg" alt="skills icon">
+						<div class="picture__wrap-text">Adobe<br>Premiere Pro</div>
+						<div class="picture__block-items">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+							<img class="picture__wrap-element" src="img/Star.png" alt="picture">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="container">
 			<div class="portfolio__inner">
 				<h2 class="portfolio__title">Portfolio</h2>
 				<div class="portfolio__items">
-					<img class="portfolio__item-img" src="img/layer__1.jpg" alt="img">
-					<a class="portfolio__item-link" href="">Online fashion store - Homepage</a>
+					<img class="portfolio__item-img" src="img/Portfolio__picture-one.jpg" alt="portfolio img">
+					<a class="portfolio__item-link" tabindex="8" href="#">Online fashion store - Homepage</a>
 				</div>
 				<div class="portfolio__items">
-					<img class="portfolio__item-img" src="img/layer__2.jpg" alt="img">
-					<a class="portfolio__item-link" href="">Reebok Store - Concept</a>
+					<img class="portfolio__item-img" src="img/Portfolio__picture-two.jpg" alt="portfolio img">
+					<a class="portfolio__item-link" tabindex="9" href="#">Reebok Store - Concept</a>
 				</div>
 				<div class="portfolio__items">
-					<img class="portfolio__item-img" src="img/layer__3.jpg" alt="img">
-					<a class="portfolio__item-link" href="">Braun Landing Page - Concept</a>
+					<img class="portfolio__item-img" src="img/Portfolio__picture-three.jpg" alt="portfolio img">
+					<a class="portfolio__item-link" tabindex="10" href="#">Braun Landing Page - Concept</a>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<section class="contacts">
+	<section class="contacts" id="contacts">
 		<div class="container">
 			<div class="contacts__inner">
 				<h2 class="contacts__title">Contacts</h2>
 				<p class="contacts__subtitle">Want to know more or just chat? <br>
 					You are welcome!</p>
-				<a class="contacts__button" href="#">
+				<a class="contacts__button" tabindex="11" href="#">
 					Send message
 				</a>
 			</div>
 		</div>
 	</section>
-
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__inner">
 				<div class="footer__box">
-					<img class="foooter__box-item" src="img/icon__`.jpg" alt="">
-					<img class="foooter__box-item" src="img/Group 8.jpg" alt="">
-					<img class="foooter__box-item" src="img/Group 9.jpg" alt="">
-					<img class="foooter__box-item" src="img/Group 10.png" alt="">
+					<a class="foooter__box-item" target="_blank" tabindex="12" href="#"><img src="img/Contacts__Three.jpg" alt="footer icon"></a>
+					<a class="foooter__box-item" target="_blank" tabindex="13" href="#"><img src="img/Contacts__Four.jpg" alt="footer icon"></a>
+					<a class="foooter__box-item" target="_blank" tabindex="14" href="#"><img src="img/Contacts__One.jpg" alt="footer icon"></a>
+					<a class="foooter__box-item" target="_blank" tabindex="15" href="#"><img src="img/Contacts__Two.jpg" alt="footer icon"></a>
 				</div>
 				<p class="footer__text">Like me on <br>
 					LinkedIn, Instagram, Behance, Dribble</p>
 			</div>
 		</div>
 	</footer>
-
+	<div class="stt stt__block_black"></div>
+	<script src="js/main.js"></script> <!-- smooth scroll -->
+	<script src="js/scrollToTop.js"></script> <!-- scrollToTop -->
+	</div>
 </body>
-
 </html>

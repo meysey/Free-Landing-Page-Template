@@ -1,18 +1,10 @@
-html{
-	height: 100%;
-}
-
-
-
-body {
+html,body {
 	background-color: #fff;
-	font-family: 'Gilroy-Bold';
+	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 	line-height: 22px;
 	margin: 0;
-	display: flex;
-	flex-direction: column;
-	flex: 1 0 auto;
+	flex: 1 1 auto;
 }
 
 *,
@@ -21,25 +13,31 @@ body {
 	box-sizing: border-box;
 }
 
-ul {
+.page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+ ul, p, a {
 	padding: 0;
 	margin: 0;
 }
 
-p{
- margin: 0
-}
-
 .container{
 	margin: 0 auto;
-	max-width: 943px;
+	max-width: 953px;
+	padding: 0 10px;
 }
 
+/* 	header start */
 .header__block-nav{
 	height: 88px;
 	display: flex;
 	align-items: center;
+	border-bottom: 1px solid #828282;
 }
+
 .menu {
 	text-decoration: none;
 }
@@ -60,60 +58,82 @@ p{
 	margin-right: 0;
 }
 
-
 .menu__list-item a{
 	text-decoration: none;
-	font-size: 18px;
-	line-height: 22px;
 	color: #828282;
 }
 
-.menu__list-item a:hover{
+.menu__list-item a:hover, .menu__list-item--active a{
 	color: #070707;
 }
+/* header end */
 
-.menu__list-item--active a{
-	color: #070707;
-}
-
-.header__block-himself{
+/* intro start */
+.intro__block{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 50px;
 }
 
-.header__title{
-	font-size: 47.3392px;
+.intro__block--adaptive {
+	display: none;
+}
+
+.intro__title{
+	font-size: 47px;
 	line-height: 59px;
 	color: #070707;
 	align-self: flex-end;
 	margin: 40px 0 0 0;
-
 }
 
-.header__proffesion{
-	font-size: 18px;
-	line-height: 22px;
+.intro__proffesion{
 	color: #070707;
 	align-self: flex-end;
-	font-weight: 200;
 }
 
-.header__lng{
-	align-self:flex-end;
-	writing-mode: vertical-lr;
+.intro__lng{
+	align-self: flex-end;
+	writing-mode: vertical-rl;
+	transform: rotate(-180deg);
 }
-.header__picture img{
+
+.intro__lng a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.intro__lng-ru a{
+	color: #828282;
+	border-bottom: 2px solid#000000;
+	padding-bottom: 4px;
+}
+
+.intro__lng-ru:hover a{
+	color: #000000;
+}
+
+.hamb{
+	display: none;
+}
+
+
+.intro__picture img{
 	margin-bottom: 52px;
+	max-width: 100%;
 }
 
-/* headear end */
+.intro__picture-mobile {
+	display: none;
+}
+/*  intro end */
 
-.about-me{
-	margin-top: 52px;
+/* about start */
+.about {
+	padding-top: 52px;
 }
 
-.about-me__inner{
+.about__inner{
 	text-align: center;
 	padding-bottom: 107px;
 	background: #F6F6F6;
@@ -127,17 +147,17 @@ p{
 	line-height: 42px;
 }
 
-.about-me__text{
+.about__text{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: 218px;
 }
-
 /* about end */
 
+/* skills start */
 .skills{
-	margin-top: 91px;
+	padding-top: 91px;
 }
 
 .skills__title{
@@ -156,12 +176,39 @@ p{
 .skills__pictures-wrap{
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 111px;
 }
 
+.picture__wrap-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.picture__wrap-text{
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	color: #828282;
+	margin-top: 24px;
+}
+
+.picture__block-items {
+	margin-top: 40px;
+}
+
+.picture__wrap-element{
+	margin-right: 9px;
+}
+
+.picture__wrap-element:last-child{
+	margin-right: 0;
+}
 /* skills end */
 
+/* portfolio start */
 .portfolio{
-	margin-top: 222px;
+	padding-top: 111px;
 }
 
 .portfolio__title{
@@ -181,9 +228,9 @@ p{
 	text-decoration: underline;
 	margin: 44px 0 100px 0;
 }
-
 /* portfolio end */
 
+/* contacts start */
 .contacts{
 	margin-top: 114px;
 }
@@ -201,8 +248,6 @@ p{
 }
 
 .contacts__subtitle{
-	font-size: 18px;
-	line-height: 22px;
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 30px;
@@ -217,6 +262,17 @@ p{
 	border-radius: 60px;
 	text-align: center;
 	margin-bottom: 85px;
+    opacity: 1;
+	transition: .3s;
+}
+
+.contacts__button:hover{
+	box-shadow: 1px 3px 10px #000;
+}
+/* contacts end */
+
+.footer {
+	margin-top: auto;
 }
 
 .footer__inner{
@@ -239,3 +295,4 @@ p{
 	color: #828282;
 	margin-bottom: 123px;
 }
+/* footer end */
