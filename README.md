@@ -1,6 +1,6 @@
 # Free-Landing-Page-Template
 
-#Hi everyone! :hand:
+##Hi everyone! :hand:
 
 ___
 
