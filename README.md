@@ -2,8 +2,6 @@
 
 ## Hi everyone! :hand:
 
-___
-
 Here we won't see:
 * __*ADAPTIVE*__
 * __*Сhange language on button click*__
